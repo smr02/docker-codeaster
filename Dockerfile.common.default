@@ -82,7 +82,7 @@ RUN wget --no-check-certificate \
 # download MED
 WORKDIR ${TEMP_DIRECTORY}/med
 RUN wget --no-check-certificate \
-    http://files.salome-platform.org/Salome/other/med-${VERSION_MED}.tar.gz \
+    http://files.salome-platform.org/Salome/medfile/med-${VERSION_MED}.tar.gz \
     -O med.tar.gz && tar xf med.tar.gz -C . --strip-components 1 && rm med.tar.gz
 
 # clone metis
